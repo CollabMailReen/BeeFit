@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="mobile-web-app-capable" content="yes">
+		<link rel="stylesheet" href="chat.css">
+		<style>
+		.btn {
+			display: flex;
+			}
+		.btn > button {
+			flex: 1;
+			padding: .2em;
+			font-size: 2em;
+			}
+		</style>
+		
+	</head>
+
+	<body>
+		<ul class="chat-history">
+			<li class="bot">Hello! Are you going to sleep or waking up?</li>
+		</ul>
+		<div class="btn"> 
+			<button onclick="askBot('sleep:wakeup');">Wake up </button> 
+			<button onclick="askBot('sleep:sleep');">Sleep </button>
+			
+		</div>
+	</body>
+	<script>
+		window.chatMode = 'sleep';
+	</script>
+	<script src="chat.js"></script>
+</html>
